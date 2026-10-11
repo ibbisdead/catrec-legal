@@ -21,11 +21,11 @@
 <div class="table-wrap">
 <table>
 <tr><th>Permission</th><th>What CatRec uses it for</th><th>If you say no</th></tr>
-<tr><td><strong>Microphone</strong><br><code>RECORD_AUDIO</code></td><td>Recording your voice when you turn on microphone audio or a separate mic track.</td><td>You can still record video and internal audio.</td></tr>
-<tr><td><strong>Camera</strong><br><code>CAMERA</code></td><td>The face-cam bubble shown on screen and in your recording, only while you have it turned on.</td><td>No face cam; everything else works.</td></tr>
-<tr><td><strong>Notifications</strong><br><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>The recording notification with stop, pause, mute and screenshot buttons, and "recording saved" notices.</td><td>Recording still works, but you lose the notification controls.</td></tr>
-<tr><td><strong>Photos and videos</strong>, <strong>Music and audio</strong><br><code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>, <code>READ_MEDIA_AUDIO</code> (Android 13+); <code>READ_EXTERNAL_STORAGE</code> (Android 12 and lower)</td><td>Showing the recordings, screenshots and separate mic tracks CatRec saved in its Recordings and Screenshots lists, including after a reinstall. The App doesn't browse the rest of your gallery or music. "Select photos and videos" (limited access) is supported.</td><td>New recordings are still saved, but older ones may not show up in the App's lists.</td></tr>
-<tr><td><strong>Nearby devices</strong><br><code>BLUETOOTH_CONNECT</code> (Android 12+); <code>BLUETOOTH</code> (Android 11 and lower)</td><td>Asked once during first-run setup for Bluetooth access that some devices and libraries need around recording. CatRec doesn't scan for, pair with or connect to Bluetooth devices, and doesn't record from Bluetooth microphones.</td><td>Nothing changes in CatRec.</td></tr>
+<tr><td data-label="Permission"><strong>Microphone</strong><br><code>RECORD_AUDIO</code></td><td data-label="What CatRec uses it for">Recording your voice when you turn on microphone audio or a separate mic track.</td><td data-label="If you say no">You can still record video and internal audio.</td></tr>
+<tr><td data-label="Permission"><strong>Camera</strong><br><code>CAMERA</code></td><td data-label="What CatRec uses it for">The face-cam bubble shown on screen and in your recording, only while you have it turned on.</td><td data-label="If you say no">No face cam; everything else works.</td></tr>
+<tr><td data-label="Permission"><strong>Notifications</strong><br><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td data-label="What CatRec uses it for">The recording notification with stop, pause, mute and screenshot buttons, and "recording saved" notices.</td><td data-label="If you say no">Recording still works, but you lose the notification controls.</td></tr>
+<tr><td data-label="Permission"><strong>Photos and videos</strong>, <strong>Music and audio</strong><br><code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>, <code>READ_MEDIA_AUDIO</code> (Android 13+); <code>READ_EXTERNAL_STORAGE</code> (Android 12 and lower)</td><td data-label="What CatRec uses it for">Showing the recordings, screenshots and separate mic tracks CatRec saved in its Recordings and Screenshots lists, including after a reinstall. The App doesn't browse the rest of your gallery or music. "Select photos and videos" (limited access) is supported.</td><td data-label="If you say no">New recordings are still saved, but older ones may not show up in the App's lists.</td></tr>
+<tr><td data-label="Permission"><strong>Nearby devices</strong><br><code>BLUETOOTH_CONNECT</code> (Android 12+); <code>BLUETOOTH</code> (Android 11 and lower)</td><td data-label="What CatRec uses it for">Asked once during first-run setup for Bluetooth access that some devices and libraries need around recording. CatRec doesn't scan for, pair with or connect to Bluetooth devices, and doesn't record from Bluetooth microphones.</td><td data-label="If you say no">Nothing changes in CatRec.</td></tr>
 </table>
 </div>
 
@@ -33,9 +33,9 @@
 <div class="table-wrap">
 <table>
 <tr><th>Permission</th><th>What CatRec uses it for</th><th>If you say no</th></tr>
-<tr><td><strong>Display over other apps</strong><br><code>SYSTEM_ALERT_WINDOW</code></td><td>The floating record button, the countdown, on-screen drawing, the face-cam bubble and the watermark on top of other apps.</td><td>Start and stop recordings from the App or its notification instead.</td></tr>
-<tr><td><strong>Battery optimization exemption</strong><br><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>An optional prompt to stop aggressive battery savers on some phones from ending long recordings.</td><td>Some phones may stop long recordings in the background.</td></tr>
-<tr><td><strong>CatRec game mic helper</strong><br>Accessibility service (optional)</td><td>Keeps your microphone recording while a game or chat app also uses it, so teammates can still hear you. See below.</td><td>Ordinary recording is unaffected; only game/chat mic recording may not work on some devices.</td></tr>
+<tr><td data-label="Permission"><strong>Display over other apps</strong><br><code>SYSTEM_ALERT_WINDOW</code></td><td data-label="What CatRec uses it for">The floating record button, the countdown, on-screen drawing, the face-cam bubble and the watermark on top of other apps.</td><td data-label="If you say no">Start and stop recordings from the App or its notification instead.</td></tr>
+<tr><td data-label="Permission"><strong>Battery optimization exemption</strong><br><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td data-label="What CatRec uses it for">An optional prompt to stop aggressive battery savers on some phones from ending long recordings.</td><td data-label="If you say no">Some phones may stop long recordings in the background.</td></tr>
+<tr><td data-label="Permission"><strong>CatRec game mic helper</strong><br>Accessibility service (optional)</td><td data-label="What CatRec uses it for">Keeps your microphone recording while a game or chat app also uses it, so teammates can still hear you. See below.</td><td data-label="If you say no">Ordinary recording is unaffected; only game/chat mic recording may not work on some devices.</td></tr>
 </table>
 </div>
 
@@ -52,12 +52,12 @@
 <div class="table-wrap">
 <table>
 <tr><th>Permission</th><th>What CatRec uses it for</th></tr>
-<tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Running the recorder while you use other apps, with a notification showing that recording is on. The microphone type is used only when microphone or internal audio is turned on.</td></tr>
-<tr><td><code>FOREGROUND_SERVICE_CAMERA</code></td><td>Keeping the face-cam bubble running over other apps while you record.</td></tr>
-<tr><td><code>INTERNET</code></td><td>Ads, Google Play purchases, and crash reports and statistics (when turned on). Never used to upload your recordings.</td></tr>
-<tr><td><code>com.android.vending.BILLING</code></td><td>Buying Remove Ads or the Support me tip through Google Play.</td></tr>
-<tr><td><code>WAKE_LOCK</code></td><td>Keeping the screen on during a recording when you turn on <strong>Keep screen on</strong>.</td></tr>
-<tr><td><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and lower)</td><td>Saving recordings on older Android versions. Android 10 and later save through the system media store without it.</td></tr>
+<tr><td data-label="Permission"><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td data-label="What CatRec uses it for">Running the recorder while you use other apps, with a notification showing that recording is on. The microphone type is used only when microphone or internal audio is turned on.</td></tr>
+<tr><td data-label="Permission"><code>FOREGROUND_SERVICE_CAMERA</code></td><td data-label="What CatRec uses it for">Keeping the face-cam bubble running over other apps while you record.</td></tr>
+<tr><td data-label="Permission"><code>INTERNET</code></td><td data-label="What CatRec uses it for">Ads, Google Play purchases, and crash reports and statistics (when turned on). Never used to upload your recordings.</td></tr>
+<tr><td data-label="Permission"><code>com.android.vending.BILLING</code></td><td data-label="What CatRec uses it for">Buying Remove Ads or the Support me tip through Google Play.</td></tr>
+<tr><td data-label="Permission"><code>WAKE_LOCK</code></td><td data-label="What CatRec uses it for">Keeping the screen on during a recording when you turn on <strong>Keep screen on</strong>.</td></tr>
+<tr><td data-label="Permission"><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and lower)</td><td data-label="What CatRec uses it for">Saving recordings on older Android versions. Android 10 and later save through the system media store without it.</td></tr>
 </table>
 </div>
 
