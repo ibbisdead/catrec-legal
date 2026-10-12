@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Permissions</h1>
-<p class="updated">CatRec – Screen Recorder · Last updated: October 12, 2026</p>
+<p class="updated">CatRec – Screen Recorder · Last updated: October 13, 2026</p>
 
 <p>This page lists every Android permission CatRec uses, what it is for, and whether you can say no. None of them is used to send your recordings, screenshots or audio to us. How data is handled is covered in the <a href="privacy.html">Privacy Policy</a>.</p>
 
@@ -33,8 +33,9 @@
 <div class="table-wrap">
 <table>
 <tr><th>Permission</th><th>What CatRec uses it for</th><th>If you say no</th></tr>
-<tr><td data-label="Permission"><strong>Display over other apps</strong><br><code>SYSTEM_ALERT_WINDOW</code></td><td data-label="What CatRec uses it for">The floating record button, the countdown, on-screen drawing, the face-cam bubble and the watermark on top of other apps.</td><td data-label="If you say no">Start and stop recordings from the App or its notification instead.</td></tr>
+<tr><td data-label="Permission"><strong>Display over other apps</strong><br><code>SYSTEM_ALERT_WINDOW</code></td><td data-label="What CatRec uses it for">The floating record button, the countdown, on-screen drawing, the face-cam bubble, the watermark, and the Capture / Done buttons of a scrolling screenshot on top of other apps.</td><td data-label="If you say no">Start and stop recordings from the App or its notification instead.</td></tr>
 <tr><td data-label="Permission"><strong>Battery optimization exemption</strong><br><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td data-label="What CatRec uses it for">An optional prompt to stop aggressive battery savers on some phones from ending long recordings.</td><td data-label="If you say no">Some phones may stop long recordings in the background.</td></tr>
+<tr><td data-label="Permission"><strong>Do Not Disturb access</strong><br><code>ACCESS_NOTIFICATION_POLICY</code> (optional, Pro)</td><td data-label="What CatRec uses it for">Only if you turn on <strong>Hide notification pop-ups</strong>: CatRec switches Do Not Disturb to alarms only while a recording runs, so pop-ups don't appear in the video, then puts your previous setting back (also after a crash). It doesn't read your notifications.</td><td data-label="If you say no">Notification pop-ups can appear in recordings, as before.</td></tr>
 <tr><td data-label="Permission"><strong>CatRec game mic helper</strong><br>Accessibility service (optional)</td><td data-label="What CatRec uses it for">Keeps your microphone recording while a game or chat app also uses it, so teammates can still hear you. See below.</td><td data-label="If you say no">Ordinary recording is unaffected; only game/chat mic recording may not work on some devices.</td></tr>
 </table>
 </div>
@@ -55,7 +56,8 @@
 <tr><td data-label="Permission"><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td data-label="What CatRec uses it for">Running the recorder while you use other apps, with a notification showing that recording is on. The microphone type is used only when microphone or internal audio is turned on.</td></tr>
 <tr><td data-label="Permission"><code>FOREGROUND_SERVICE_CAMERA</code></td><td data-label="What CatRec uses it for">Keeping the face-cam bubble running over other apps while you record.</td></tr>
 <tr><td data-label="Permission"><code>INTERNET</code></td><td data-label="What CatRec uses it for">Ads, Google Play purchases, and crash reports and statistics (when turned on). Never used to upload your recordings.</td></tr>
-<tr><td data-label="Permission"><code>com.android.vending.BILLING</code></td><td data-label="What CatRec uses it for">Buying Remove Ads or the Support me tip through Google Play.</td></tr>
+<tr><td data-label="Permission"><code>com.android.vending.BILLING</code></td><td data-label="What CatRec uses it for">Buying CatRec Pro (subscription or lifetime) through Google Play, and restoring earlier purchases such as Remove Ads.</td></tr>
+<tr><td data-label="Permission"><code>RECEIVE_BOOT_COMPLETED</code></td><td data-label="What CatRec uses it for">Setting a <strong>Scheduled recording</strong> reminder again after your phone restarts. Nothing runs at startup if you haven't scheduled one.</td></tr>
 <tr><td data-label="Permission"><code>WAKE_LOCK</code></td><td data-label="What CatRec uses it for">Keeping the screen on during a recording when you turn on <strong>Keep screen on</strong>.</td></tr>
 <tr><td data-label="Permission"><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and lower)</td><td data-label="What CatRec uses it for">Saving recordings on older Android versions. Android 10 and later save through the system media store without it.</td></tr>
 </table>
