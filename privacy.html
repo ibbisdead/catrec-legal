@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="updated">CatRec – Screen Recorder · Last updated: October 13, 2026</p>
+<p class="updated">CatRec – Screen Recorder · Last updated: October 14, 2026</p>
 
 <p>This policy explains how <strong>CatRec – Screen Recorder</strong> (the "App"), published by ibbie ("we", "us"), handles information. We don't run servers, the App has no accounts, and we don't sell your data.</p>
 
@@ -63,7 +63,15 @@
 <p>They never receive your recordings, screenshots, audio or anything shown on your screen. This is on by default; turn off <strong>Usage analytics</strong> in Settings to stop both and clear the install ID. Google keeps Crashlytics crash data for 90 days. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 
 <h2>Live streaming</h2>
-<p>If you go live, the App sends your screen and the sound you picked (app sound, microphone, both or none) directly to the RTMP server you entered, which is YouTube Live by default. That server's operator, for example Google for YouTube, handles the stream under its own privacy policy. CatRec doesn't keep a copy and doesn't send the stream anywhere else. Your server address and stream key are stored only in the App's storage on your phone.</p>
+<p>If you go live, the App sends your screen and the sound you picked (app sound, microphone, both or none) directly to the streaming server of the destination you chose: YouTube, Twitch, Kick, Facebook or any RTMP server you enter. That service's operator (for example Google for YouTube, Twitch Interactive for Twitch, Meta for Facebook) handles the stream under its own privacy policy. CatRec doesn't send the stream anywhere else.</p>
+<ul>
+<li><strong>Stream keys</strong> and server addresses are stored only on your phone. Stream keys are encrypted with a key kept in your phone's Android Keystore.</li>
+<li><strong>Logo, banner and "Be right back" image</strong> (CatRec Pro) are copied into the App's own storage on your phone and drawn into the stream, so viewers see them.</li>
+<li><strong>Save a copy</strong> (CatRec Pro) saves the stream as a video in your Movies/CatRec folder on your phone.</li>
+<li><strong>Twitch chat bubble</strong>: if you turn it on and enter your channel name, the App connects to Twitch's chat servers without signing in (as an anonymous, read-only viewer) to show your channel's public chat. Only the channel name is sent; you can't post messages from CatRec.</li>
+<li><strong>Check my connection</strong> only opens a connection to the streaming server to measure how long it takes and reads Android's estimate of your upload speed. Nothing is uploaded and your stream key isn't sent.</li>
+</ul>
+<p>Whatever is on your screen while you're live, including notifications, can be seen by your viewers. "Hide CatRec from viewers" covers the stream while CatRec itself is open, and "Be right back" covers it and mutes the sound until you return.</p>
 
 <h2>Auto captions</h2>
 <p>When you use <strong>Auto captions</strong> in the video editor, the speech in that video is turned into text by Android's on-device speech recognizer. The audio and the text stay on your phone; CatRec doesn't send them anywhere. If no speech model is installed, Android may offer to download one from Google.</p>

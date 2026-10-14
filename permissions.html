@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Permissions</h1>
-<p class="updated">CatRec – Screen Recorder · Last updated: October 13, 2026</p>
+<p class="updated">CatRec – Screen Recorder · Last updated: October 14, 2026</p>
 
 <p>This page lists every Android permission CatRec uses, what it is for, and whether you can say no. None of them is used to send your recordings, screenshots or audio to us. How data is handled is covered in the <a href="privacy.html">Privacy Policy</a>.</p>
 
@@ -55,7 +55,8 @@
 <tr><th>Permission</th><th>What CatRec uses it for</th></tr>
 <tr><td data-label="Permission"><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td data-label="What CatRec uses it for">Running the recorder while you use other apps, with a notification showing that recording is on. The microphone type is used only when microphone or internal audio is turned on.</td></tr>
 <tr><td data-label="Permission"><code>FOREGROUND_SERVICE_CAMERA</code></td><td data-label="What CatRec uses it for">Keeping the face-cam bubble running over other apps while you record.</td></tr>
-<tr><td data-label="Permission"><code>INTERNET</code></td><td data-label="What CatRec uses it for">Ads, Google Play purchases, and crash reports and statistics (when turned on). Never used to upload your recordings.</td></tr>
+<tr><td data-label="Permission"><code>INTERNET</code></td><td data-label="What CatRec uses it for">Ads, Google Play purchases, crash reports and statistics (when turned on), and live streaming to the service you choose (plus reading your Twitch chat if you turn that on). Never used to upload your saved recordings.</td></tr>
+<tr><td data-label="Permission"><code>ACCESS_NETWORK_STATE</code></td><td data-label="What CatRec uses it for">Live streaming: "Check my connection" reads whether you're on Wi-Fi or mobile data and Android's estimate of your upload speed, to suggest a stream quality.</td></tr>
 <tr><td data-label="Permission"><code>com.android.vending.BILLING</code></td><td data-label="What CatRec uses it for">Buying CatRec Pro (subscription or lifetime) through Google Play, and restoring earlier purchases such as Remove Ads.</td></tr>
 <tr><td data-label="Permission"><code>WAKE_LOCK</code></td><td data-label="What CatRec uses it for">Keeping the screen on during a recording when you turn on <strong>Keep screen on</strong>.</td></tr>
 <tr><td data-label="Permission"><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and lower)</td><td data-label="What CatRec uses it for">Saving recordings on older Android versions. Android 10 and later save through the system media store without it.</td></tr>
