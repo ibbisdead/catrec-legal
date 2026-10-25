@@ -9,7 +9,7 @@
 <body>
 <main>
 <h1>Permissions</h1>
-<p class="updated">CatRec – Screen Recorder · Last updated: October 14, 2026</p>
+<p class="updated">CatRec – Screen Recorder · Last updated: October 25, 2026</p>
 
 <p>This page lists every Android permission CatRec uses, what it is for, and whether you can say no. None of them is used to send your recordings, screenshots or audio to us. How data is handled is covered in the <a href="privacy.html">Privacy Policy</a>.</p>
 
@@ -45,7 +45,7 @@
 <ul>
 <li>It cannot read your screen or other apps (<code>canRetrieveWindowContent="false"</code>).</li>
 <li>It cannot tap, type, scroll or control anything (<code>canPerformGestures="false"</code>).</li>
-<li>It only receives window-change notices, which can include the name of the app in front. It ignores them and stores or sends nothing.</li>
+<li>It asks Android for no events at all, so it receives no information about your screen or the apps you use.</li>
 <li>It doesn't record audio itself; CatRec's recorder does that with the Microphone permission, only during a recording you started.</li>
 </ul>
 
